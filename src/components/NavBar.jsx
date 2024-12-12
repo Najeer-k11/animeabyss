@@ -28,7 +28,7 @@ function NavBar() {
             {/* Nav Links */}
             <div key={`links`} className={`w-auto hidden max-w-xl  lg:gap-8 lg:flex lg:justify-between`}>
                 {
-                    navlinks.map((link) => (<NavLink id={link.id} name={link.name} path={link.path} />))
+                    navlinks.map((link) => (<NavLink key={link.id} id={link.id} name={link.name} path={link.path} />))
                 }
             </div>
 
