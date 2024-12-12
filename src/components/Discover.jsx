@@ -16,7 +16,7 @@ async function Discover({ type }) {
             <h2 className={`text-[28px] text-button font-medium`}>Top</h2>
             <div className={`grid gap-2 xl:grid-rows-1 lg:grid-rows-1 md:grid-rows-1 grid-rows-1 grid-cols-3 lg:mx-0 xl:mx-0`}>
                 {
-                    results.map((item) => (
+                    results?.map((item) => (
                         <div key={item.mal_id} className={`relative space-y-3 col-span-1 w-full h-auto rounded-xl `}>
                             <img className={`rounded-xl grayscale-0 md:grayscale-0 cursor-pointer hover:grayscale-0 object-cover w-full h-auto xl:h-[200px] lg:h-[200px] md:h-[200px] xl:filter xl:grayscale lg:filter lg:grayscale transition-opacity duration-500`} src={item.images.jpg.image_url}></img>
                             <div className='lg:flex xl:flex xl:flex-row space-x-2  md:flex flex flex-col '>

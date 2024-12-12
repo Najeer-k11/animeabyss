@@ -17,7 +17,7 @@ async function Trending({ type }) {
             <h2 className={`text-[28px] text-button font-medium`}>Discover</h2>
             <div className={`grid lg:gap-auto xl:gap-auto md:gap-2 gap-2 grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 md:grid-cols-4`}>
                 {
-                    results.map((item) => (
+                    results?.map((item) => (
                         <div key={item.mal_id} className={`relative space-y-3 col-span-1  rounded-xl `}>
                             <img className={`rounded-xl grayscale-0 md:grayscale-0 cursor-pointer hover:grayscale-0 object-cover w-full h-auto xl:filter xl:grayscale lg:filter lg:grayscale transition-opacity duration-500`} src={item.images.jpg.image_url}></img>
                             <div className='lg:flex xl:flex xl:flex-col space-y-2 space-x-2 lg:flex-col md:flex-col  md:flex flex flex-col '>
