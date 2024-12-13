@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react';
 
 async function getData(type) {
@@ -14,7 +15,7 @@ async function getData(type) {
     }
 }
 
-async function Trending({ type }) {
+function Trending({ type }) {
     const [results, setResults] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);

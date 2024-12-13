@@ -1,4 +1,4 @@
-'use server'
+'use client'
 import React, { useEffect, useState } from 'react';
 
 async function getData(type) {

@@ -36,7 +36,7 @@ function NavBar() {
             <div key={`searchbar`} className={`w-auto lg:h-[45px] h-[35px] md:h-[45px] flex gap-4`}>
                 <input className='w-full rounded-full lg:text-sm text-xs xl:text-sm p-3 placeholder:text-textcol/11 border-textcol/5 border-2 placeholder:dark:text-textcol/11 bg-search text-textcol dark:text-textcol' type="search" name="" placeholder='search here' value={search} onChange={(e) => { handleSearch(e.target.value) }} id="" />
                 <button className={`rounded-full xl:h-[45px] xl:w-[45px] w-[32px] h-[32px] lg:h-[45px] lg:w-[45px] px-2 flex justify-center border-textcol/5 border-2  items-center bg-button hover:bg-green-500 transition-colors duration-500`} type="submit">
-                    <Link href={`search/${search}`}>
+                    <Link href={``}>
                         <svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
                         </svg>
